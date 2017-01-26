@@ -1,0 +1,5 @@
+.container
+  h2#menu-categories-title.text-center   {{ menuItemsCtrl.menuItems.category.name}} Menu
+  .text-center {{ menuItemsCtrl.menuItems.category.special_instructions}}
+  menu-item(ng-repeat='menuItem in menuItemsCtrl.menuItems.menu_items', menu-item='menuItem')
+    
